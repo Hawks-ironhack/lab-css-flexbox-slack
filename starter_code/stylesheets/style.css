@@ -51,23 +51,21 @@ nav a {
     color: white;
 }
 
-header {
-    padding-top: 80px;
- }
-
  footer {
     background-color: #F4F3F4;
  }
 
  header {
+    padding-top: 80px;
      display: flex;
      flex-direction: column;
+     text-align: left;
      align-items: center;
      margin: 8px;
  }
 
  header img {
-     width: 600px;
+     width: 80%;
      height: 100%;
      justify-content: center;
  }
@@ -80,14 +78,11 @@ header {
 
  header h1 {
      font-size: 4em;
-     padding-right: 500px;
-     margin-left:15px;
-     margin-bottom: 20px
  }
 
   button {
      text-align: center;
-     width: 500px;
+     width: 80%;
      padding: 20px;
      font-size: 20px;
      background-color:#192592;
@@ -96,8 +91,9 @@ header {
  }
 
  input {
-     width: 480px;
+     width: 80%;
      height: 50px;
+     border-radius: 4px;
      margin: 20px;
      font-size: 20px;
  }
@@ -140,30 +136,15 @@ main img {
     padding: 15px 0;
 }
 
-/* main input {
-    padding: 10px;
-    border: 1px solid grey;
-    letter-spacing: 1px;
-    width: 80%;
-    border-radius: 4px;
-    margin-bottom: 20px;
-} */
-
-main button:nth-child(0) {
+button:nth-child(3) {
     background-color: #ffffff;
-    
     color: #192592;
     
 }
 
-/* main button:last-child {
-    background-color: #192592;
-    padding: 10px;
-    color: #ffffff;
-    border: 1px solid black;} */
-
-
 .social {
     background-color: #F4F3F4;
+    display: flex;
+    flex-direction: row;
 }
 
