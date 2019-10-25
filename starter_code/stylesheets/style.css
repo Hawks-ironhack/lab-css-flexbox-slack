@@ -1,11 +1,10 @@
 /*
 background-grey: #F4F3F4;
-button-purple: #192592
+button-purple: #192592;
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-
 
 /* Mobile  */
 
@@ -23,13 +22,11 @@ nav {
     background-color: #fefefe;
     padding-left: 25px;
     padding-right: 25px;
-
 }
 nav img {
     height: 100px;
     width: 100;
 }
-
 nav ul {
     display: flex;
     list-style: none;
@@ -47,7 +44,7 @@ nav a {
 }
 
 .workspace {
-    background-color: blue;
+    background-color: #192592;
     margin-left: 30px;
     padding: 5px;
     border-radius: 10px;
@@ -57,15 +54,7 @@ nav a {
 header {
     padding-top: 80px;
  }
- main {
-    background-color: #F4F3F4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
- }
- main img {
-    max-width: 100%;
- }
+
  footer {
     background-color: #F4F3F4;
  }
@@ -96,19 +85,85 @@ header {
      margin-bottom: 20px
  }
 
- header button {
+  button {
      text-align: center;
      width: 500px;
      padding: 20px;
      font-size: 20px;
-     background-color: blue;
+     background-color:#192592;
      color: white;
      border-radius: 10px;
  }
 
- header .form {
+ input {
      width: 480px;
      height: 50px;
      margin: 20px;
      font-size: 20px;
  }
+
+h2 {
+    font-size: 2em;
+    color: #2C303F;
+}
+
+main {
+    background-color: #F4F3F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ }
+
+main p {
+    margin: 20px;
+    color: #2C303F;
+}
+
+main img {
+    max-width: 250px;
+    max-height: 20%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 50px 0 0 0;
+    margin: 0 50px;
+}
+
+.col {
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+}
+
+/* main input {
+    padding: 10px;
+    border: 1px solid grey;
+    letter-spacing: 1px;
+    width: 80%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+} */
+
+main button:nth-child(0) {
+    background-color: #ffffff;
+    
+    color: #192592;
+    
+}
+
+/* main button:last-child {
+    background-color: #192592;
+    padding: 10px;
+    color: #ffffff;
+    border: 1px solid black;} */
+
+
+.social {
+    background-color: #F4F3F4;
+}
+
