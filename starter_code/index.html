@@ -13,46 +13,78 @@
 <body>
   <nav>
     <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
-      <a href="#"> <li>Why Slack?</li></a>
-      <a href="#"><li>Pricing</li></a>
-      <a href="#"><li>About Us</li></a>
-      <a class="workspace" href="#"><li>Your Workspaces</li></a>
+    <div class="menu-bars">
+        <!-- <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div> -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="hamburger menu icon">
+        <ul class="dropdown">
+          <li><a href="#">Why Slack?</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Your Workspace</a></li>
+        </ul>
+    </div>
+
+    <ul class="menu">
+      <li><a href="#">Why Slack?</a></li><li>
+      <a href="#">Pricing</a></li><li>
+      <a href="#">About Us</a></li>
+      <li class="workspace"><a href="#">Your Workspaces</a></li>
     </ul>
   </nav>
 
-  <header>
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+  <header class="flex-wrap">
+
+    <div class="container">
+      <h1>Where Work Happens</h1>
+      <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract,
+        finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you
+        covered.
+      </p>
+    </div>
+    <div class="flex-wrap">
       <input class="form" type="email" placeholder=" Email address">
       <button type="button" name="button">GET STARTED</button>
-  
-    <p>Already using Slack? <a href="#">Sign in</a></p>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    
+      <p>Already using Slack? <a href="#">Sign in</a></p>
+    </div>
+    <div>
+      <img src="./images/home_talking.png" alt="home_work_happening">
+    </div>
   </header>
 
   <main>
-    <div>
+    <div class="container">
       <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
       <button>DISCOVER WHY</button>
-      <div class="container">
-        <div class="col"><img src="./images/airbnb-logo.png" alt=""></div>
-        <div class="col"><img src="./images/capital-one-logo.png" alt=""></div>
-        <div class="col"><img src="./images/harvard-logo.png" alt=""></div>
-        <div class="col"><img src="./images/los-angeles-times-logo.png" alt=""></div>
-        <div class="col"><img src="./images/oracle-logo.png" alt=""></div>
-        <div class="col"><img src="./images/ticketmaster-logo.png" alt=""></div>
+    </div>
+    <div class="flex-wrap">
+      <div class="logos">
+        <img src="./images/airbnb-logo.png" alt="">
+      </div>
+      <div class="logos">
+        <img src="./images/capital-one-logo.png" alt="">
+      </div>
+      <div class="logos">
+        <img src="./images/harvard-logo.png" alt="">
+      </div>
+      <div class="logos">
+        <img src="./images/los-angeles-times-logo.png" alt="">
+      </div>
+      <div class="logos">
+        <img src="./images/oracle-logo.png" alt="">
+      </div>
+      <div class="logos">
+        <img src="./images/ticketmaster-logo.png" alt="">
       </div>
     </div>
     <hr>
-    <div class="container">
-      <div class="col">
+    <div class="flex-wrap">
+      <div>
         <h3>Try it for free</h3>
         <p>Already using Slack? <a href="">Sign in</a></p>
       </div>
-      <div class="col">
+      <div id="bottom-buttons">
         <input type="email" placeholder="Email address">
         <button type="button" name="button">GET STARTED</button>
       </div>
@@ -60,43 +92,54 @@
   </main>
 
   <footer>
-    <div class="container">
-      <img src="./images/iso-slack.png" alt="">
-      <ul>
-        <li>COMPANY</li>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Blog</li>
-        <li>Press</li>
-        <li>Brand Guidelines</li>
-      </ul>
-      <ul>
-        <li>PRODUCT</li>
-        <li>Why Slack?</li>
-        <li>Enterprise</li>
-        <li>Customer Stories</li>
-        <li>Pricing</li>
-        <li>Security</li>
-      </ul>
-      <ul>
-        <li>RESOURCES</li>
-        <li>Download</li>
-        <li>Help Center</li>
-        <li>Guides</li>
-        <li>Events</li>
-        <li>App Directory</li>
-        <li>API</li>
-      </ul>
-      <ul>
-        <li>EXTRAS</li>
-        <li>Podcast</li>
-        <li>Slack Shop</li>
-        <li>Slack at Work</li>
-        <li>Slack Fund</li>
-      </ul>
+
+    <div class="flex-wrap">
+      <div>
+        <img src="./images/iso-slack.png" alt="">
+      </div>
+      <div>
+        <ul>
+          <li>COMPANY</li>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>Press</li>
+          <li>Brand Guidelines</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>PRODUCT</li>
+          <li>Why Slack?</li>
+          <li>Enterprise</li>
+          <li>Customer Stories</li>
+          <li>Pricing</li>
+          <li>Security</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>RESOURCES</li>
+          <li>Download</li>
+          <li>Help Center</li>
+          <li>Guides</li>
+          <li>Events</li>
+          <li>App Directory</li>
+          <li>API</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>EXTRAS</li>
+          <li>Podcast</li>
+          <li>Slack Shop</li>
+          <li>Slack at Work</li>
+          <li>Slack Fund</li>
+        </ul>
+      </div>
     </div>
-    <div class="social">
-      <ul>
+    <div class="flex-wrap social">
+      <ul class="">
         <li>Status</li>
         <li>Privacy & Terms</li>
         <li>Contact Us</li>
@@ -105,6 +148,8 @@
         <img src="./images/us-flag.png" alt="">
         <span>English (US)</span>
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+      <div>
         <i class="fa fa-twitter" aria-hidden="true"></i>
         <i class="fa fa-facebook" aria-hidden="true"></i>
         <i class="fa fa-youtube-play" aria-hidden="true"></i>
